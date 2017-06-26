@@ -28,22 +28,22 @@
 
 
 <div class="w3-container">
-<h2>Search book</h2>
+<h2>View user and associated books</h2>
 <center>
 
-<form action="view_by_id">
+<form action="view_user">
 <table>
 
 <tr>
 <td>
-Enter book id:
+Enter user id:
 </td>
 <td>
-<input type="text" name= "book_ID">
+<input type="text" name= "user_ID">
 </td>
 <tr>
 <td></td>
-<td><input type="submit" value="Search books">
+<td><input type="submit" value="Search">
 </td>
 </tr>
 </table>

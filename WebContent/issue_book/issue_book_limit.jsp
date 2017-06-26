@@ -9,12 +9,11 @@
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 </head>
 <body>
-<!-- Sidebar -->
+<!--Sidebar -->
 <div class="w3-sidebar w3-light-grey w3-bar-block" style="width:20%">
   <h3 class="w3-bar-item">Menu</h3>
   <a href="add_new_book/Add_new_book.jsp" class="w3-bar-item w3-button">Add book</a>
   <a href="View_book/Search_by_ID_home.jsp" class="w3-bar-item w3-button">Search book</a>
-    <a href="view_user/view_user_home.jsp" class="w3-bar-item w3-button">view user details</a>
    <a href="Add_user/Add_user_home.jsp" class="w3-bar-item w3-button">add user</a>
   <a href="issue_book/issue_book_home.jsp" class="w3-bar-item w3-button">Issue book</a>
     <a href="return_book/return_book_home.jsp" class="w3-bar-item w3-button">Return book</a>
@@ -29,10 +28,7 @@
 
 <div class="w3-container">
 <center>
-welcome
-<br>
-<img border="0" src="images/librartimg.jpg"
-     alt="lib img" width="304" height="228">
+<h1 style="color:red;">sorry your book issue limit is reached please return some books!!</h1>
 
 </center>
 

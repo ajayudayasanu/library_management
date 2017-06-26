@@ -28,7 +28,9 @@
 
 <hibernate-configuration>
 
+
     <session-factory>
+   
 
         <!-- Database connection settings -->
         <property name="connection.driver_class">org.postgresql.Driver</property>
@@ -53,6 +55,7 @@
 
         <!-- Names the annotated entity class -->
         <mapping class="library_management_Hibernate.Book_details"/>
+         <mapping class="library_management_Hibernate.User_details"/>
 
     </session-factory>
 

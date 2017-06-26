@@ -13,8 +13,8 @@
 <!-- Sidebar -->
 <div class="w3-sidebar w3-light-grey w3-bar-block" style="width:20%">
   <h3 class="w3-bar-item">Menu</h3>
-  <a href="add_new_book/Add_new_book.jsp" class="w3-bar-item w3-button">Add book</a>
-  <a href="View_book/Search_by_ID_home.jsp" class="w3-bar-item w3-button">Search book</a>
+  <a href="#" class="w3-bar-item w3-button">Add book</a>
+  <a href="..\View_book\Search_by_ID_home.jsp" class="w3-bar-item w3-button">Search book</a>
   <a href="#" class="w3-bar-item w3-button">Issue book</a>
     <a href="#" class="w3-bar-item w3-button">Return book</a>
 </div>
@@ -56,6 +56,37 @@ Price
 <input type="text" name= "price"><br>
 </td>
 </tr>
+
+<tr>
+<td>
+ISBN:
+</td>
+<td>
+<input type="text" name= "ISBN"><br>
+</td>
+</tr>
+
+<tr>
+<td>Book edition</td>
+<td><input type="text" name= "Book_edition"></td>
+</tr>
+
+<tr>
+<td>pages:</td>
+<td><input type="text" name= "pages"></td>
+</tr>
+
+<tr>
+<td>Language</td>
+<td><input type="text" name= "language"></td>
+</tr>
+
+<tr>
+<td>Date of publish<br> (yyyy-MM-dd)</td>
+<td><input type="text" name= "date_of_publish"></td>
+</tr>
+
+
 <tr>
 <td>
 </td>

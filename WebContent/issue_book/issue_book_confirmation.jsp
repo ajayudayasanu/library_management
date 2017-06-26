@@ -4,38 +4,80 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>Library management system(LMS v1.0)</title>
+<title>book details confirmation</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 </head>
 <body>
+
 <!-- Sidebar -->
 <div class="w3-sidebar w3-light-grey w3-bar-block" style="width:20%">
   <h3 class="w3-bar-item">Menu</h3>
   <a href="add_new_book/Add_new_book.jsp" class="w3-bar-item w3-button">Add book</a>
   <a href="View_book/Search_by_ID_home.jsp" class="w3-bar-item w3-button">Search book</a>
-    <a href="view_user/view_user_home.jsp" class="w3-bar-item w3-button">view user details</a>
-   <a href="Add_user/Add_user_home.jsp" class="w3-bar-item w3-button">add user</a>
-  <a href="issue_book/issue_book_home.jsp" class="w3-bar-item w3-button">Issue book</a>
-    <a href="return_book/return_book_home.jsp" class="w3-bar-item w3-button">Return book</a>
+  <a href="#" class="w3-bar-item w3-button">Issue book</a>
+    <a href="#" class="w3-bar-item w3-button">Return book</a>
 </div>
-
-<!-- Page Content -->
 <div style="margin-left:20%">
 
 <div class="w3-container w3-teal">
-  <h1>Library management system</h1>
+  <h1>Library management system (LMS v1.0)</h1>
 </div>
+
 
 <div class="w3-container">
 <center>
-welcome
+<h1 style="color:green;">Book issued successfully</h1>
 <br>
-<img border="0" src="images/librartimg.jpg"
-     alt="lib img" width="304" height="228">
 
+<table>
+<tr>
+<td>
+user ID: 
+</td>
+<td>
+<%=request.getAttribute("user_id") %><br>
+</td>
+</tr>
+<tr>
+<td>
+Name:
+</td>
+<td>
+<%=request.getAttribute("username") %><br>
+</td>
+</tr>
+<tr>
+<td>
+book ID:
+</td>
+<td>
+ <%=request.getAttribute("book_id") %><br>
+</td>
+</tr>
+
+<tr>
+<td>
+book name:
+</td>
+<td>
+ <%=request.getAttribute("book_name") %><br>
+</td>
+</tr>
+
+<tr>
+<td>
+issue date:
+</td>
+<td>
+ <%=request.getAttribute("issue_date") %><br>
+</td>
+</tr>
+
+</table>
+<br>
+<br>
 </center>
-
 </div>
 </div>
 </body>

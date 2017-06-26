@@ -27,71 +27,88 @@
 
 <div class="w3-container">
 <center>
-<h1 style="color:green;">data added to the database successfully</h1>
+<h1 style="color:green;">Book returned successfully</h1>
 <br>
 
 <table>
 <tr>
 <td>
-Name 
+user ID: 
 </td>
 <td>
-<%=request.getAttribute("book_name") %><br>
-</td>
-</tr>
-<tr>
-<td>
-Author
-</td>
-<td>
-<%=request.getAttribute("book_author") %><br>
+<%=request.getAttribute("User_ID") %><br>
 </td>
 </tr>
 <tr>
 <td>
-Price:
+User name:
 </td>
 <td>
- <%=request.getAttribute("book_price") %><br>
+<%=request.getAttribute("user_name") %><br>
+</td>
+</tr>
+<tr>
+<td>
+book ID:
+</td>
+<td>
+ <%=request.getAttribute("book_id") %><br>
 </td>
 </tr>
 
 <tr>
 <td>
-Book_edition:
+book name:
 </td>
 <td>
-<%=request.getAttribute("Book_edition") %><br>
+ <%=request.getAttribute("book_name") %><br>
 </td>
 </tr>
 
 <tr>
 <td>
-pages:
+issue date:
 </td>
 <td>
-<%=request.getAttribute("pages") %><br>
+ <%=request.getAttribute("book_issue") %><br>
 </td>
 </tr>
 
 <tr>
 <td>
-language:
+return date:
 </td>
 <td>
-<%=request.getAttribute("language") %><br>
+ <%=request.getAttribute("book_return") %><br>
 </td>
 </tr>
 
 <tr>
 <td>
-Date of publish:
+No: days :
 </td>
 <td>
-<%=request.getAttribute("Date_of_publish") %><br>
+ <%=request.getAttribute("no_of_days") %><br>
 </td>
 </tr>
+
+<tr>
+<td>
+Fine:
+</td>
+<td>
+ <%=request.getAttribute("fine") %><br>
+</td>
+</tr>
+
 </table>
+<button onclick="myFunction()">Print this page</button>
+
+<script>
+function myFunction() {
+    window.print();
+}
+</script>
 <br>
 <br>
 </center>
